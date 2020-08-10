@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Boat excursions Fažana - Prne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="sidro.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h1 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    color: #383838;
+  }
+  h2 {
+    font-size: 24px;
+    color: #383838;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-family: Verdana;
+    font-size: 20px;
+    color: #555555;
+    line-height: 1.5;
+    letter-spacing: .25px;
+  }  
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    color: rgb(20, 0, 0);
+    text-align: center;
+    padding: 130px;
+    font-family: Montserrat, sans-serif;
+    background-image: url(brijuni85.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #066ef58e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #066ef58e;
+    font-size: 200px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #066ef58e;
+  }
+  .carousel-indicators li {
+    border-color: #066ef58e;
+  }
+  .carousel-indicators li.active {
+    background-color: #066ef58e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #066ef58e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #066ef58e;
+    background-color: #fff !important;
+    color: #066ef58e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #066ef58e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #066ef5c0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #066ef58e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  .video-fluid {
+  width: 1000px;
+  height: 800px;
+}
+.lo:hover {
+  opacity: 0.82;
+}
+.center {
+    margin-top: 75px;
+}
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="#" class="lo">
+        <img src="Logo7.PNG" style="height: 50px;width: 125px;" alt="Logo">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center container-fluid">
+  <h1>Fažana, Istria</h1>
+  <h1>National park Brijuni</h1>
+  <h1><b>Taxi boat Prne</b></h1>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid text-center">
+  <div class="row">
+      
+      <h2>Boat excursions – sunset(dolphins), swimming tours, panorama</h2><br>
+      <h3>We are a small cruising yacht boat that fits up to 12 persons, and we are doing boat excursions<br>
+      around Brijuni national park islands. On our boat You can sit on the front of the boat while cruising<br>
+      or stay under the shade in the back, and our boat is also equipped with toilette and cabin, which makes<br>
+      it perfect for sea cruising. The boat is equipped with toilette. Our team (captain and tourist guide)<br>
+      operate for more then 10 years, if you need anything else you can speak with the tourist guide on the boat.<br> 
+      Check out our services on the next section<br></h3>
+      <p>*If you are a group bigger than 12 person you can also contact us for similar excursions</p><br>
+  </div>
+</div>
+<!-- Container (Portfolio Section) -->
+  <div id="portfolio" class="container-fluid text-center bg-grey">
+    <h1>Photo gallery</h1>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="IMG2.jpg"  class="img-fluid">
+          <h3>Front of the boat</h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Brod.jpg"  class="img-fluid">
+          <h3>Boat</h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="IMG3.jpg"  class="img-fluid">
+          <h3>Dolphins</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="IMG7.jpg"  class="img-fluid">
+          <h3>Private tour</h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="IMG1.jpg"  class="img-fluid">
+          <h3>Birthday suprise</h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="IMG8.jpg"  class="img-fluid">
+          <h3>Sunset behind Brijuni islands</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center slideanim">
+      <div class="col-md-2"></div>
+      <div class="col-sm-12 col-md-8 ">
+        <div class="embed-responsive embed-responsive-4by3">
+          <video  class="embed-responsive-item" autoplay loop controls muted>
+            <source src="C0270.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        <h3>Video of Dolphins</h3>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+   </div><br>
+   
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h1>Services & Pricing</h1>
+    <h4>Choose an option that suits you!</h4>
+    <h4>We operate every day, contact us for more info!</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Sunset (Dolphins)</h1>
+        </div>
+        <div class="panel-body">
+          <h3>Cruise through aquatorium of Brijuni national park, 
+            during the sunset. Excursion is 90-150 minutes long, 
+            depending on how lucky we are. On normal occasions 
+            we see them more then 75% of the time.</h3>
+        </div>
+        <div class="panel-footer">
+          <h3>150 HRK (20 EUR)</h3>
+          <h4>per person</h4>
+          <h4>*Children are half price</h4>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Panorama</h1>
+        </div>
+        <div class="panel-body">
+          <h3>Cruise through aquatorium of Brijuni national park.
+            Cruise is 90 minutes long. You’ll see all 14 beautiful 
+            islands from the boat, and at the end of the tour, you
+            can have a swimming break at one island (Min. 2 hours).</h3>
+        </div>
+        <div class="panel-footer">
+          <h3>150 HRK (20 EUR)</h3>
+          <h4>per person</h4>
+          <h4>*Children are half price</h4>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Private tours</h1>
+        </div>
+        <div class="panel-body">
+          <h3>You decide! On private tours you can choose if you want
+             to spend your time swimming(from the boat or on the island
+            St. Jeorlim), or cruising. On private tours you have boat
+            for yourself or just your family or friends!
+          </h3>
+        </div>
+        <div class="panel-footer">
+          <h3>from 1500 HRK (200 EUR)</h3>
+          <h4>per tour</h4>
+          <h4>*Prices may vary for some special requests.</h4>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="col-sm-8 wrapper text-center center">
+      <p>Feel free to contact us! Mail, Viber, Whatsup or just give us a call!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Fažana, Istra, Croatia</p>
+      <h2><span class="glyphicon glyphicon-phone"></span>+ 385 95 864 7919  or  00 385 95 864 7919</h2>
+      <h2><span class="glyphicon glyphicon-envelope"></span> boatprne@gmail.com</h2>
+      <a href="mailto:boatprne@gmail.com?subject=Boat excursion request"><h3>Send a request</h3></a>
+  </div>
+  <div class="col-sm-3 text text-center align-bottom">
+      <img src="Tabla.jpg"  class="img-fluid img-thumbnail rounded">
+      <h3>Our table</h3>
+    <p>*we are not responsible for anything if you book similar excursions with others</p>
+    <p>if you want to visit big Brijuni island <a href="https://www.np-brijuni.hr/">click here</a></p>
+  </div>
+  <div class="col-sm-1">
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
