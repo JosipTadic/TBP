@@ -16,8 +16,12 @@
     line-height: 1.8;
     color: #818181;
   }
+  p {
+    font-family: Georgia;
+  }
   h1 {
     font-size: 1.4em;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     margin-bottom: 50px;
     color: #383838;
     font-family: Arial;
@@ -180,6 +184,10 @@
 .center {
     margin-top: 75px;
 }
+.panelHeader{
+  margin-bottom: 20px;
+  font-size: 1.9em;
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -209,11 +217,13 @@
 
 <div class="jumbotron text-center container-fluid">
   <div class="row">
-    <div class="col-xs-12">
-      <h1>Fažana, Istria</h1>
-      <h1>National park <i><b>Brijuni</b></i></h1>
-      <h1><b>Taxi boat Prne</b></h1>
-    </div>
+      <h1 class="panelHeader">Fažana, Istria</h1>
+  </div>
+  <div class="row">
+      <h1 class="panelHeader">National park <i><b>Brijuni</b></i></h1>
+  </div>
+  <div class="row">
+      <h1 class="panelHeader"><b>Taxi boat Prne</b></h1>
   </div>
 </div>
 
@@ -302,7 +312,7 @@
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1 style="margin-bottom: 20px;">Sunset (Dolphins)</h1>
+          <h1 class="panelHeader">Sunset (Dolphins)</h1>
         </div>
         <div class="panel-body">
           <h3>Cruise through aquatorium of Brijuni national park, 
@@ -320,7 +330,7 @@
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1 style="margin-bottom: 20px;">Panorama</h1>
+          <h1 class="panelHeader">Panorama</h1>
         </div>
         <div class="panel-body">
           <h3>Cruise through aquatorium of Brijuni national park.
@@ -338,7 +348,7 @@
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1 style="margin-bottom: 20px;">Private tours</h1>
+          <h1 class="panelHeader">Private tours</h1>
         </div>
         <div class="panel-body">
           <h3>You decide! On private tours you can choose if you want
