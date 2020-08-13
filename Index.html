@@ -200,9 +200,19 @@
   margin-bottom: 20px;
   font-size: 1.7em;
 }
+#myDIV {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  opacity: 0.90;
+}
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="alertUser('Welcome to this AMAZING web page!')">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -398,9 +408,14 @@
   <div class="col-sm-1">
   </div>
 </div>
+<div id="myDIV">
+    This site uses 3rd party cookies, and Google Analytics services.
+    <button class="btn btn-warning" onclick="myFunction()">OK</button>
+</div>
 <script>
-function alertUser(msg) {
-  alert(msg);
+function myFunction() {
+  var x = document.getElementById("myDIV");
+    x.style.display = "none";
 }
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
