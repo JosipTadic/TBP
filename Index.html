@@ -25,6 +25,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="Index.css">
+  <script src="Index.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -37,7 +38,7 @@
         <span class="icon-bar"></span>                        
       </button>
       <a href="#" class="lo">
-        <img src="Logo7.PNG" style="height: 50px;width: 125px;" alt="Logo">
+        <img src="Resources/Logo7.PNG" style="height: 50px;width: 125px;" alt="Logo">
       </a>
     </div>
     <div class="collapse navbar-collapse monospaceFont" id="myNavbar">
@@ -86,19 +87,19 @@
     <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="IMG2.jpg"  class="img-fluid">
+          <img src="Resources/IMG2.jpg"  class="img-fluid">
           <h2 class="margin1vh">Front of the boat</h2>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="Brod.jpg"  class="img-fluid">
+          <img src="Resources/Brod.jpg"  class="img-fluid">
           <h2 class="margin1vh normalFont">Boat</h2>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="IMG3.jpg"  class="img-fluid">
+          <img src="Resources/IMG3.jpg"  class="img-fluid">
           <h2 class="margin1vh normalFont">Dolphins</h2>
         </div>
       </div>
@@ -106,19 +107,19 @@
     <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="IMG7.jpg"  class="img-fluid">
+          <img src="Resources/IMG7.jpg"  class="img-fluid">
           <h2 class="margin1vh normalFont">Private tour</h2>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="IMG1.jpg"  class="img-fluid">
+          <img src="Resources/IMG1.jpg"  class="img-fluid">
           <h2 class="margin1vh normalFont">Birthday suprise</h2>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail normalFont">
-          <img src="IMG8.jpg"  class="img-fluid">
+          <img src="Resources/IMG8.jpg"  class="img-fluid">
           <h2 class="margin1vh">Sunset behind Brijuni islands</h2>
         </div>
       </div>
@@ -218,7 +219,7 @@
       <hr>
   </div>
   <div class="col-sm-3 text text-center align-bottom">
-      <img src="Tabla.jpg"  class="img-fluid img-thumbnail rounded">
+      <img src="Resources/Tabla.jpg"  class="img-fluid img-thumbnail rounded">
       <h3>Our table</h3>
     <p>*we are not responsible for anything if you book similar excursions with others</p>
     <p class="margin30px">if you want to visit big Brijuni island <a href="https://www.np-brijuni.hr/">click here</a></p>
@@ -230,46 +231,5 @@
     This site uses 3rd party cookies, and Google Analytics services. &nbsp;
     <button class="btn btn-warning" onclick="myFunction()">OK</button>
 </div>
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-    x.style.display = "none";
-}
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
-
 </body>
 </html>
